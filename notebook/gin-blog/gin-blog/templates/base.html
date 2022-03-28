@@ -1,0 +1,51 @@
+{{define "header"}}
+
+<nav class="py-2 bg-light border-bottom">
+    <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+            <li class="nav-item"><a href="/" class="nav-link link-dark px-2 active" aria-current="page">首页</a></li>
+            <li class="nav-item"><a href="/post_index" class="nav-link link-dark px-2">列表</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
+        </ul>
+        <ul class="nav">
+            <a type="button" class="btn btn-outline-primary me-2" href="/login">登录</a>
+            <a type="button" class="btn btn-primary" href="/register">注册</a>
+        </ul>
+    </div>
+</nav>
+<header class="py-3 mb-4 border-bottom">
+    <!--<header class="p-3 bg-dark text-white">-->
+    <!--    <div class="container">-->
+    <!--        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">-->
+    <!--            <a class="navbar-brand" href="#">青苗Kimi</a>-->
+
+    <!--            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">-->
+    <!--                <li><a href="/" class="nav-link px-2 text-secondary">首页</a></li>-->
+    <!--                <li><a href="#" class="nav-link px-2 text-white">博客</a></li>-->
+    <!--            </ul>-->
+
+    <!--            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">-->
+    <!--                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">-->
+    <!--            </form>-->
+
+    <!--            <div class="text-end">-->
+    <!--                <a type="button" class="btn btn-outline-light me-2" href="/login">登录</a>-->
+    <!--                <a type="button" class="btn btn-warning" href="/register">注册</a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="container d-flex flex-wrap justify-content-center">
+        <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"/>
+            </svg>
+            <span class="fs-4">Gin Blog</span>
+        </a>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+    </div>
+</header>
+{{end}}
